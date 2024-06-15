@@ -18,7 +18,7 @@ color:  .byte 0,0,0,0   ;color negro
         DSUB $s2,$s2,$t1   ;ASCII a decimal
         
         LB $t0,color($0)
-        SB $t0,0($s1)
+        SB $t0,0($s1)        ;guardo color en DATA
 
         DADDI $t1,$0,1
         BEQ $s2,$t1,uno
